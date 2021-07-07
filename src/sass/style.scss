@@ -1,0 +1,25 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Museo Sans', sans-serif;
+    position: relative;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@import "blocks/logo";
+@import "blocks/promo";
+@import "blocks/button";
+@import "blocks/about-me";
+@import "blocks/title";
+@import "blocks/news";
+@import "blocks/discs";
+@import "blocks/footer";
+@import "blocks/links";
+@import "blocks/modal";
+
+.show{
+    left: 0;
+    opacity: 1;
+}

@@ -1,0 +1,35 @@
+.discs{
+    background: url("../image/background_white_stars.jpg");
+    padding: 70px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &__list{
+        background-color: rgba(255, 166, 1, 0.7);
+        border-radius: 20px;
+        &_header{
+            font-size: 30px;
+            font-weight: 800;
+            text-align: center;
+            text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        }
+        &_items{
+            padding: 0 20px;
+            li{
+                display: block;
+                list-style: none; 
+                background: url("../icons/disc.png") no-repeat 0 3px;
+                padding-left: 30px; 
+                font-size: 24px;
+                p{
+                    font-size: 16px; 
+                }
+            }
+        }
+        &_item{
+            margin-bottom: 15px;
+        }
+    }
+}

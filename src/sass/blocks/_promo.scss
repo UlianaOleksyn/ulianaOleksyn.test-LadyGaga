@@ -1,0 +1,53 @@
+.promo{
+    // background: url("/image/background5.jpg") left (top/cover) no-repeat;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    &__foto{
+        mix-blend-mode: darken;
+        position: absolute;
+        top: 0px;
+        left: -50px;
+        height: 100%;
+        width: auto;
+    }
+    &__descr{
+        position: absolute;
+        left: 620px;
+        width: 40%;
+        top: 40px;
+        font-size: 36px;
+        font-weight: 500;
+        color: black;
+        line-height: 1.4;
+        text-shadow: -2px 0 #FFA501, 0 2px #FFA501, 2px 0 #FFA501, 0 -2px #FFA501;
+        span{
+            display: block;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            color: white;
+            margin-bottom: -40px;
+        }
+        .header__descr_name{
+            margin: 40px 0 60px 0;
+            font-size: 80px;
+            color: #FFA501;
+            text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+        }
+    }
+    &__links{
+        width: 400px;
+        position: relative;
+    }
+    &__link{
+        position: absolute;
+        display: block;
+        text-decoration: none;
+        margin-top: 15px;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ 
+    }
+}
+

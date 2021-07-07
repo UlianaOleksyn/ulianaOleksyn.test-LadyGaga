@@ -1,0 +1,84 @@
+.news{
+    background: url("../image/background2.jpg") center (center/cover) no-repeat;
+    padding: 70px 0;
+
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__items{
+        width: 63%;
+    }
+    &__item{
+        padding: 5px 0 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 243px;
+        background-color: rgba(7, 22, 120, 0.3);
+        box-shadow: inset 2px 2px 5px#071678, inset -2px -2px 5px#071678,;
+        margin-bottom: 30px;
+        border-radius: 70%;
+        &_img{
+            width: 25%;
+            height: auto;
+            border-radius: 35%;
+            opacity: 0.95;
+        }
+        &_wrapper{
+            padding: 0 15px;
+            text-align: center;
+        }
+        &_title{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 22px;
+            color: black;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        }
+        &_descr{
+            display: block;
+            margin: 0 auto;
+            width: 430px;
+            font-size: 18px;
+            font-weight: 300;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            a{
+                display: block;
+                margin-top: 10px;
+                font-size: 24px;
+                font-weight: 700;
+                text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+            }
+
+            
+        }
+    }
+
+    &__videos{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &_item{
+        margin-top: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 5px 5px 5px white, -5px -5px 5px white;
+        &:first-child{
+            margin-top: -50px;
+        }
+        }
+        iframe{
+            width: 100%;
+            height: auto;
+            display: block;
+            box-shadow: 5px 5px 5px white, -5px -5px 5px white;
+        }
+    }
+}
