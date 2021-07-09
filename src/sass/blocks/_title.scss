@@ -1,8 +1,8 @@
 .title{
     font-weight: 700;
     font-size: 60px;
-    color: #FFA501;
-    text-shadow: -2px 0 #071678, 0 2px #071678, 2px 0 #071678, 0 -2px #071678;
+    color: #071678;
+    text-shadow: -2px 0 #FFA501, 0 2px #FFA501, 2px 0 #FFA501, 0 -2px #FFA501;
     text-transform: uppercase;
     text-align: center;
     &_white-shadow{
@@ -15,5 +15,8 @@
     &_modal{
         font-size: 36px;
         margin: 15px 0;
+    }
+    &_animate{
+        animation: flip 1s;
     }
 }

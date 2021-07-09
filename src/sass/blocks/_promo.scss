@@ -3,13 +3,18 @@
     width: 100%;
     height: 670px;
     position: relative;
+    background-color: black;
     &__foto{
-        mix-blend-mode: darken;
+        // mix-blend-mode: darken;
         position: absolute;
         top: 0px;
         left: -50px;
         height: 100%;
         width: auto;
+        &_animate{
+            animation: rollIn 1s;
+        }
+    
     }
     &__descr{
         position: absolute;
@@ -20,20 +25,30 @@
         font-weight: 500;
         color: black;
         line-height: 1.4;
-        text-shadow: -2px 0 #FFA501, 0 2px #FFA501, 2px 0 #FFA501, 0 -2px #FFA501;
+        text-shadow: -1px 0 #FFA501, 0 1px #FFA501, 1px 0 #FFA501, 0 -1px #FFA501;
+        &_wrapper{
+            &-animate{
+                animation: lightSpeedInRight 1s;
+            }
+        }
+
         span{
             display: block;
             text-transform: uppercase;
             font-weight: 700;
             font-size: 40px;
-            color: white;
+            color: #071678;
             margin-bottom: -40px;
+            text-shadow: -1px 0 #FFA501, 0 1px #FFA501, 1px 0 white, 0 -1px white;
         }
-        .header__descr_name{
+        &_name{
             margin: 40px 0 60px 0;
             font-size: 80px;
             color: #FFA501;
-            text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 #fff, 0 -2px #fff;
+            &-animate{
+                animation: rotateIn 2s;
+            }
         }
     }
     &__links{
@@ -45,9 +60,7 @@
         display: block;
         text-decoration: none;
         margin-top: 15px;
-        color: white;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
- 
+        color: #071678; 
     }
 }
 

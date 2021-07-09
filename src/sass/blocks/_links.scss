@@ -11,6 +11,9 @@
         text-decoration: none;
         text-shadow: -1px 0 rgb(53, 45, 45), 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     }
+    &_animate{
+        animation: fadeInLeft 1s;
+    }
 }
 .footer_link{
     a{

@@ -1,6 +1,6 @@
 header{
     background: url("../image/gold-background.jpg") center (center/cover) no-repeat;
-    height: 95px;
+    height: 100px;
     // border: 3px outset  #FFA501;
 }
 footer{
@@ -12,31 +12,6 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-    &__logo{
-        width: 60%;
-
-        
-    }
-    &__link{
-        width: 20%;
-        display: block;
-        a{
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            color: #071678;
-            text-decoration: none;
-            text-shadow: -1px 0 rgb(53, 45, 45), 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
-        }
-        &_gold a{
-            color: #FFA501;
-            text-shadow: -1px 0 black, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
-        }
-
-
     }
     &__icons{
         width: 20%;
@@ -63,4 +38,8 @@ footer{
             }
         }
     }
+}
+
+.icons_animate{
+    animation: fadeInDown 1s;
 }

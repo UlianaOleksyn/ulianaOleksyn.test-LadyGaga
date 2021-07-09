@@ -15,11 +15,9 @@ body{
 @import "blocks/title";
 @import "blocks/news";
 @import "blocks/discs";
-@import "blocks/footer";
+@import "blocks/header_footer";
 @import "blocks/links";
 @import "blocks/modal";
+// @import "blocks/animate";
 
-.show{
-    left: 0;
-    opacity: 1;
-}
+

@@ -5,8 +5,9 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    transition: all 0.5s;
-
+    &_active{
+        left: 0;
+    }
     &__dialog{
         width: 100%;
         height: 100%;
@@ -14,20 +15,18 @@
         position: absolute;
     }
     &__content{
-    padding: 30px 50px;
-    position: absolute;
-    top: 0;
-    right: -100%;
-    opacity: 0;
-    height: 100%;
-    width: 50%;
-    background: url("../image/background-gold.jpg");
-    transition: all 0.5s;
-    z-index: 2000;
-    &_show{
-        right: 0;
-        opacity: 1;
-    }
+        padding: 30px 50px;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 50%;
+        background: url("../image/background-gold.jpg");
+        transition: all 0.5s;
+        // z-index: 2000;
+        &_show{
+            right: 0;
+        }
     }
     &__close{
         font-size: 70px;
@@ -38,6 +37,10 @@
         color: #071678;
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
         cursor: pointer;
+        &_mini{
+            font-size: 50px;
+            font-weight: 500;
+        }
     }
     &__subtitle{
         font-size: 24px;
@@ -48,15 +51,25 @@
     &__form{
         width: 70%;
         margin-top: 30px;
-
-        input{
-            height: 45px;
+        input[placeholder]{
+            height: 35px;
             width: 100%;
-            padding: 0 15px;
+            padding: 0 5px;
             font-size: 18px;
             margin-bottom: 20px;
             font-weight: 300;
             box-shadow: inset 2px 2px 5px #071678;
+            background-image: linear-gradient(to right, #071678, #026EC2, #071678);
+            color: white;
+            &:invalid {
+                // border: 2px solid red;
+                &:required {
+                    background-image: linear-gradient(to right, pink, #FFA501);
+                }
+            }
+            &:valid {
+            border: 2px solid black;
+            }
         }
         textarea{
             width: 100%;
@@ -66,7 +79,46 @@
             font-weight: 300;
             margin-bottom: 15px;
             box-shadow: inset 2px 2px 5px #071678;
+            background-image: linear-gradient(to right, #071678, #026EC2, #071678);
+            &:invalid {
+                // border: 2px solid red;
+                &:required {
+                    background-image: linear-gradient(to right, pink, #FFA501);
+                  }
+            }
+            &:valid {
+            border: 2px solid black;
+            }
         }
     }
-   
+    &__questions{
+        input{
+            width: 100% !important;
+            margin: 5px !important;
+        }
+    }
+    &-thanks{
+        &__content{
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("../image/background-gold.jpg");
+            border: 3px outset  #071678;
+            border-radius: 20px;
+            width: 35%;
+            display: none;
+            &_active{
+                display: block;
+            }
+        }
+        &__title{
+            color: white;
+            font-size: 28px;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
 }
