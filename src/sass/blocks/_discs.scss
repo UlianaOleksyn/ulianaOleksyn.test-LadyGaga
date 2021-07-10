@@ -9,11 +9,17 @@
     &__list{
         background-color: rgba(255, 166, 1, 0.7);
         border-radius: 20px;
+        &_animate{
+            animation: fadeIn 0.7s backwards;
+        }
         &_header{
             font-size: 30px;
             font-weight: 800;
             text-align: center;
             text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        &_animate{
+            animation: fadeInUp 0.4s backwards;
+        }
         }
         &_items{
             padding: 0 20px;
@@ -30,6 +36,9 @@
         }
         &_item{
             margin-bottom: 15px;
+            &_animate{
+                animation: zoomIn 1s backwards;
+            }
         }
     }
 }

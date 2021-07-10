@@ -11,6 +11,7 @@
 
     &__items{
         width: 55%;
+        height: auto;
     }
     &__item{
         padding: 5px 0 40px 0;
@@ -20,6 +21,10 @@
         min-height: 243px;
         margin: 50px 0;
         position: relative;
+        &:last-child{
+            margin-bottom: 0;
+        }
+     
         &_img{
             position: absolute;
             width: 25%;
@@ -28,6 +33,9 @@
             opacity: 0.95;
             top: -20%;
             box-shadow: 3px 3px 10px white, -3px -3px 10px white;
+            &_animate{
+                animation: fadeInDown 1s backwards;
+            }
         }
         &_wrapper{
             background-color: rgba(7, 22, 120, 0.5);
@@ -36,6 +44,9 @@
             padding: 70px 35px 35px 35px;
             text-align: center;
             box-shadow: 3px 3px 10px white, -3px -3px 10px white;
+            &_animate{
+                animation: zoomInUp 1s backwards;
+            }
         }
         &_title{
             text-transform: uppercase;
@@ -71,14 +82,17 @@
         justify-content: space-between;
         align-items: flex-end;
         &_item{
-        width: 90%;
-        margin-top: 130px;
-        border-radius: 45%;
-        overflow: hidden;
-        box-shadow: 5px 5px 5px white, -5px -5px 5px white;
-        &:first-child{
-            margin-top: -60px;
-        }
+            width: 90%;
+            margin-top: 130px;
+            border-radius: 45%;
+            overflow: hidden;
+            box-shadow: 5px 5px 5px white, -5px -5px 5px white;
+            &:first-child{
+                margin-top: -60px;
+            }
+            &_animate{
+                animation: slideInRight 1.5 backwards 2s;
+            }
         }
         iframe{
             width: 100%;
