@@ -90,7 +90,7 @@
                 margin-top: -60px;
             }
             &_animate{
-                animation: slideInRight 1.5 backwards 2s;
+                animation: fadeInRight 1.5 backwards 2s;
             }
         }
         iframe{
@@ -101,7 +101,7 @@
         }
     }
 }
-@media (max-width: 1024px) {
+@media screen and  (max-width: 1024px) {
     .news{
         &__items{
             width: 50%;
@@ -120,7 +120,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media screen and  (max-width: 850px) {
     .news{
         &__wrapper{
             flex-direction: column;
@@ -163,7 +163,7 @@
     }
 }
 
-@media (max-width: 555px) {
+@media screen and  (max-width: 555px) {
     .news{
         &__item{
             margin: 20px 0;

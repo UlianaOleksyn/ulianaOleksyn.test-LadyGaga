@@ -30,13 +30,13 @@
     }
 }
 
-@media(max-width: 1024px){
+@media screen and  (max-width: 1024px){
     .button{
         font-size: 27px;
         width: 70%;
     }
 }
-@media(max-width: 570px){
+@media screen and  (max-width: 570px){
     .button{
         position: absolute;
         font-size: 25px;
@@ -52,7 +52,7 @@
     }
 }
 
-@media(max-width: 425px){
+@media  (max-width: 425px){
     .button{
         font-size: 21px;
         width: 56%;

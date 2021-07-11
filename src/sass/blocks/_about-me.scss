@@ -4,7 +4,6 @@
     &__descr{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: middle;
         gap: 30px;
         &_item{
             padding: 20px;
@@ -45,7 +44,7 @@
 }
 
 
-@media (max-width: 768px){
+@media screen and  (max-width: 768px){
     .about-me{
         padding: 40px 0;
         &__descr{
@@ -59,7 +58,7 @@
     }
 }
 
-@media (max-width: 555px){
+@media  (max-width: 555px){
     .about-me{
         &__descr{
             grid-template-columns: 100%;
@@ -77,7 +76,7 @@
     }
 }
 
-@media (max-width: 555px){
+@media screen and  (max-width: 555px){
     .about-me{
         &__descr{
             &_item{

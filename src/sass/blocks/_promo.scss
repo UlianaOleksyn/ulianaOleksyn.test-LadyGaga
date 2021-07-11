@@ -66,7 +66,7 @@
     }
 }
 
-@media(max-width: 1024px){
+@media screen and  (max-width: 1024px){
     .promo{
         height: 450px;
         &__descr{
@@ -88,7 +88,7 @@
 }
 
 
-@media(max-width: 768px){
+@media screen and  (max-width: 768px){
     .promo{
         height: 400px;
         &__foto{
@@ -113,7 +113,7 @@
     }
 }
 
-@media(max-width: 570px){
+@media screen and  (max-width: 570px){
     .promo{
         height: 375px;
         &__foto{
@@ -137,7 +137,7 @@
         }
     }
 }
-@media(max-width:425px){
+@media screen and  (max-width:425px){
     .promo{
         height: 258px;
         &__foto{
@@ -167,7 +167,7 @@
         }
     }
 }
-@media(max-width: 382px){
+@media screen and  (max-width: 382px){
     .promo{
         &__foto{
             left: -30%;
@@ -181,7 +181,7 @@
             }
             &_name{
                 font-size: 32px;
-                margin: 0px 0 4px 0;
+                margin: 8px 0 8px 0;
             }
         }
         &__link{

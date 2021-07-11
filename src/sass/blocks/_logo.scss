@@ -17,19 +17,19 @@
     animation: fadeInDown 1s backwards;
 }
 
-@media (max-width: 1024px){
+@media screen and  (max-width: 1024px){
     .logo{
         font-size: 45px;
     }
 }
 
-@media (max-width: 768px){
+@media screen and  (max-width: 768px){
     .logo{
         font-size: 34px;
         }
 }
 
-@media (max-width: 425px){
+@media screen and  (max-width: 425px){
     .logo{
         font-size: 28px;
         }
