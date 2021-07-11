@@ -140,6 +140,10 @@
     &__wrapper-answers{
         display: flex;
         justify-content: space-around;
+        label{
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
     }
 }
 @media (max-width: 768px){
@@ -171,6 +175,7 @@
         &-thanks{
             &__title{
                 font-size: 18px;
+
             }
         }
     }

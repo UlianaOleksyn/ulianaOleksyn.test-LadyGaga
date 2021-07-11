@@ -51,10 +51,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
             <input type="radio" id="${this.answer3}" name="request${this.class_name}" value="${this.answer3}" required>
             </label>
             `;
-            // answer =`${this.answer_true}`;
+            answer =`${this.answer_true}`;
             form_text.after(fieldset);
-            
-
         }
     }
 
@@ -94,36 +92,55 @@ window.addEventListener('DOMContentLoaded', ()=>{
         '4'
     );
 
+    const quest_5 = new Questions(
+        'Która piosenka nie należy do Ledi Gagy:',
+        'despacito',
+        'alejandro',
+        'telephone',
+        'despacito',
+        '5'
+    );
+
+    const quest_6 = new Questions(
+        'Która piosenka należy do Ledi Gagy:',
+        'irreplaceable',
+        'paparazzi',
+        'life',
+        'paparazzi',
+        '6'
+    );
+
     function randomizeQuest(){
         if (document.querySelector(".form__questions")){
             document.querySelector(".form__questions").remove();
             answer = "";
         }
         counter = 0;
-        random = Math.floor(Math.random() * 4) + 1;
+        random = Math.floor(Math.random() * 6) + 1;
         switch (random) {
             case 1:
                 quest_1.writeContent();
-                answer = 'klasyczna';
                 break;
             case 2:
                 quest_2.writeContent();
-                answer = 'pop';
                 break;
             case 3:
                 quest_3.writeContent();
-                answer = 'disco';
+                break;
+            case 4:
+                quest_4.writeContent();
+                break;
+            case 5:
+                quest_5.writeContent();
                 break;
             default:
-                quest_4.writeContent();
-                answer = 'hymn';
+                quest_6.writeContent();
                 break;
         }
     }
 
     function showModal(){
         randomizeQuest();
-        console.log("Po raz pierwszy " + answer)
         modal.classList.add("modal_active");
         modal_content.classList.add("modal__content_show");
         document.documentElement.style.overflow = "hidden";
@@ -186,8 +203,6 @@ window.addEventListener('DOMContentLoaded', ()=>{
              
                 if (i.checked){
                     counter ++;
-                    console.log("answer= " + answer);
-                    console.log("i.value= " + i.value);
                     if (i.value == answer){
                         showThanksModal();
                         event.preventDefault();
@@ -197,7 +212,6 @@ window.addEventListener('DOMContentLoaded', ()=>{
                         alert('Wygląda na to, że jesteś botem :) \n Spróbuj jeszcze raz :)');
                         event.preventDefault();
                         randomizeQuest();
-                        console.log("Błedna odpowiedz " + answer);
                     }
                 }
             });
