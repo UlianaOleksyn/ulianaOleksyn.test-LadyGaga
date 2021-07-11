@@ -1,4 +1,6 @@
-
+*{
+    overflow-x: hidden;
+}
 body{
     box-sizing: border-box;
     font-family: 'Museo Sans', sans-serif;
@@ -35,6 +37,5 @@ body{
 @import "blocks/header_footer";
 @import "blocks/links";
 @import "blocks/modal";
-// @import "blocks/animate";
 
 

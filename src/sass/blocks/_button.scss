@@ -33,15 +33,13 @@
 @media screen and  (max-width: 1024px){
     .button{
         font-size: 27px;
-        width: 70%;
+        width: 60%;
     }
 }
 @media screen and  (max-width: 570px){
     .button{
-        position: absolute;
-        font-size: 25px;
-        width: 70%;
-        left: -32%;
+        font-size: 19px;
+        width: 47%;
         height: 50px;
     }
     .button_send{
@@ -54,9 +52,10 @@
 
 @media  (max-width: 425px){
     .button{
-        font-size: 21px;
-        width: 56%;
-        left: -15%;
-        height: 42px;
+        font-size: 18px;
+        width: 40%;
+        height: 40px;
+        left: 0;
+
     }
 }

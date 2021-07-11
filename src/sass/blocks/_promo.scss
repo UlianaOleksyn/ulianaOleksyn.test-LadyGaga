@@ -7,7 +7,7 @@
     &__foto{
         position: absolute;
         top: 0px;
-        left: 0;
+        left: -10%;
         height: 100%;
         width: auto;
         &_animate{
@@ -41,7 +41,7 @@
             text-shadow: -1px 0 #FFA501, 0 1px #FFA501, 1px 0 white, 0 -1px white;
         }
         &_name{
-            margin: 30px 0 45px 0;
+            margin: 20px 0 40px 0;
             font-size: 78px;
             color: #FFA501;
             text-shadow: -2px 0 black, 0 2px black, 2px 0 #fff, 0 -2px #fff;
@@ -51,8 +51,9 @@
         }
     }
     &__links{
-        width: 400px;
+        width: 480px;
         position: relative;
+        height: 125px;
     }
     &__link{
         position: absolute;
@@ -77,12 +78,12 @@
                 font-size: 28px;
             }
             &_name{
-                font-size: 56px;
-                margin: 0px 0 17px 0;
+                font-size: 48px;
+                margin: 0;
             }
         }
         &__link{
-            margin-top: 5px;
+            margin-top: 3px;
         }
     }
 }
@@ -92,7 +93,7 @@
     .promo{
         height: 400px;
         &__foto{
-            left: -15%;
+            left: -12%;
         }
         &__descr{
             left: 45%;
@@ -104,7 +105,6 @@
             }
             &_name{
                 font-size: 54px;
-                margin: 15px 0 25px 0;
             }
         }
         &__link{
@@ -120,6 +120,8 @@
             left: -25%;
         }
         &__descr{
+            left: 40%;
+            width: 56%;
             font-size: 20px;
             span{
                 font-size: 18px;
@@ -133,7 +135,6 @@
         &__link {
             position: absolute;
             margin-top: 25px;
-            left: -15%;
         }
     }
 }
@@ -146,13 +147,10 @@
         &__descr{
             line-height: 1.2;
             left: 36%;
+            top: 10px;
             width: 63%;
             font-size: 20px;
-            text-align: center;
             span{
-                width: 125%;
-                margin-left: -18%;
-                margin-top: -20px;
                 font-size: 20px;
                 padding-bottom: 20px;
             }
@@ -161,9 +159,11 @@
                 margin: 5px 0 14px 0;
             }
         }
+        &__links{
+            height: 77px;
+        }
         &__link{
-            margin-top: 24px;
-            margin-left: 50px;
+            margin-top: 12px;
         }
     }
 }
@@ -174,18 +174,16 @@
         }
         &__descr{
             display: block;
-            height: 180px;
+            height: 280px;
             line-height: 1.1;
-            span{
-                margin-top: -33px;
-            }
+
             &_name{
-                font-size: 32px;
-                margin: 8px 0 8px 0;
+                font-size: 30px;
+                margin: 0;
             }
         }
         &__link{
-            margin-top: 18px;
+            margin-top: 5px;
         }
     }
 }

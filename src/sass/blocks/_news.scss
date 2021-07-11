@@ -1,11 +1,10 @@
 .news{
     background: url("../image/background2.jpg") center (center/cover) no-repeat;
     padding: 70px 0;
-
     &__wrapper{
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: inherit;
         justify-content: space-between;
     }
 
@@ -14,24 +13,24 @@
         height: auto;
     }
     &__item{
-        padding: 5px 0 40px 0;
+        overflow: visible;
+        width: 95%;
+        padding: 100px 0 40px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: 243px;
-        margin: 50px 0;
+        margin: 50px auto;
         position: relative;
         &:last-child{
             margin-bottom: 0;
         }
-     
         &_img{
             position: absolute;
             width: 25%;
             height: auto;
             border-radius: 35%;
             opacity: 0.95;
-            top: -20%;
+            top: 5%;
             box-shadow: 3px 3px 10px white, -3px -3px 10px white;
             &_animate{
                 animation: fadeInDown 1s backwards;
@@ -41,7 +40,7 @@
             background-color: rgba(7, 22, 120, 0.5);
             box-shadow: inset 2px 2px 5px#071678, inset -2px -2px 5px#071678;
             border-radius: 70px;
-            padding: 70px 35px 35px 35px;
+            padding: 15% 0 35px 0;
             text-align: center;
             box-shadow: 3px 3px 10px white, -3px -3px 10px white;
             &_animate{
@@ -85,9 +84,9 @@
             margin-top: 130px;
             border-radius: 45%;
             overflow: hidden;
-            box-shadow: 5px 5px 5px white, -5px -5px 5px white;
-            &:first-child{
-                margin-top: -60px;
+           
+            iframe{
+                bottom: none;
             }
             &_animate{
                 animation: fadeInRight 1.5 backwards 2s;
@@ -107,11 +106,13 @@
             width: 50%;
         }
         &__item{
+            margin-bottom: 0;
+            padding-bottom: 0;
             &_wrapper{
                 padding: 39px 15px 35px 15px;
             }
             &_descr{
-                width: 375px;
+                width: 90%;
             }
             &_img{
                 width: 30%;
@@ -129,9 +130,15 @@
         }
         &__items{
             width: 90%;
+            display: block;
+            margin: 0 auto; 
 
         }
         &__item{
+            margin-top: 30px;
+            &:first-child{
+                margin-top: 0;
+            }
             &_wrapper{
                 margin-top: 40px;
                 padding: 15% 15px 35px 15px;
@@ -141,10 +148,11 @@
             }
             &_img{
                 width: 30%;
-                top: -15%;
+                top: 5%;
             }
         }
         &__videos{
+            margin-top: 20px;
             width: 100%;
             flex-direction: row;
             justify-content: space-around;
@@ -165,12 +173,33 @@
 
 @media screen and  (max-width: 555px) {
     .news{
+        .title{
+            margin-bottom: 0;
+        }
+        &__wrapper{
+            margin-top: 0;
+        }
         &__item{
-            margin: 20px 0;
+            padding-top: 65px;
+            width: 80%;
+            &__wrapper{
+                margin-top: 0;
+            }
             &_img{
-                top: -5%;
+                top: 13%;
             }
         }
     }
-    
 }
+@media screen and  (max-width: 425px) {
+    .news{
+        &__item{
+            padding-top: 50px;
+            margin-top: 10px;
+            &_img{
+                top: 9%;
+            }
+        }
+    }
+}
+

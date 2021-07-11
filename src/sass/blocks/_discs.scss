@@ -90,6 +90,7 @@
 
 @media  (max-width: 555px){
     .discs{
+        padding: 40px 0;
         &__wrapper{
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
