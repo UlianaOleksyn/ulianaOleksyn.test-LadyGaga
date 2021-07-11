@@ -2,12 +2,26 @@ body{
     box-sizing: border-box;
     font-family: 'Museo Sans', sans-serif;
     position: relative;
+    width: 100%;
 }
 .container{
     width: 80%;
     margin: 0 auto;
 }
 
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 98%;
+    }
+}
+
+@import "blocks/font";
 @import "blocks/logo";
 @import "blocks/promo";
 @import "blocks/button";

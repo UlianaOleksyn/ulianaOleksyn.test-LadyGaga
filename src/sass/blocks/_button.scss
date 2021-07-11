@@ -29,3 +29,34 @@
    
     }
 }
+
+@media(max-width: 1024px){
+    .button{
+        font-size: 27px;
+        width: 70%;
+    }
+}
+@media(max-width: 570px){
+    .button{
+        position: absolute;
+        font-size: 25px;
+        width: 70%;
+        left: -32%;
+        height: 50px;
+    }
+    .button_send{
+        position: relative;
+        font-size: 25px;
+        height: 50px;
+        margin-left: 40px;;
+    }
+}
+
+@media(max-width: 425px){
+    .button{
+        font-size: 21px;
+        width: 56%;
+        left: -15%;
+        height: 42px;
+    }
+}

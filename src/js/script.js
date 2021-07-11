@@ -16,9 +16,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
           
     let random,
         answer,
+        counter = 0,
         button_send;  
 
-          new WOW().init();
+    new WOW().init();
 
      // form questions
      class Questions{
@@ -50,9 +51,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
             <input type="radio" id="${this.answer3}" name="request${this.class_name}" value="${this.answer3}" required>
             </label>
             `;
+            // answer =`${this.answer_true}`;
             form_text.after(fieldset);
+            
 
-           answer = `${this.answer_true}`;
         }
     }
 
@@ -84,7 +86,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
         );
 
     const quest_4 = new Questions(
-        'Uroczysta pieśń, oficjalny narodowy symbol państwa:',
+        'Uroczysta piosenka, oficjalny narodowy symbol państwa:',
         'flag',
         'godło',
         'hymn',
@@ -93,28 +95,38 @@ window.addEventListener('DOMContentLoaded', ()=>{
     );
 
     function randomizeQuest(){
+        if (document.querySelector(".form__questions")){
+            document.querySelector(".form__questions").remove();
+            answer = "";
+        }
+        counter = 0;
         random = Math.floor(Math.random() * 4) + 1;
         switch (random) {
             case 1:
                 quest_1.writeContent();
-            break;
+                answer = 'klasyczna';
+                break;
             case 2:
                 quest_2.writeContent();
+                answer = 'pop';
                 break;
             case 3:
                 quest_3.writeContent();
+                answer = 'disco';
                 break;
             default:
                 quest_4.writeContent();
+                answer = 'hymn';
                 break;
         }
     }
 
     function showModal(){
+        randomizeQuest();
+        console.log("Po raz pierwszy " + answer)
         modal.classList.add("modal_active");
         modal_content.classList.add("modal__content_show");
         document.documentElement.style.overflow = "hidden";
-        randomizeQuest();
     }
 
     function showThanksModal(){
@@ -127,7 +139,6 @@ window.addEventListener('DOMContentLoaded', ()=>{
         modal.classList.remove("modal_active");
         document.documentElement.style.overflow = "";
         modal_thanks.classList.remove("modal-thanks__content_active");
-        document.querySelector(".form__questions").remove();
     }
     
     button_contact.addEventListener('click', ()=>{
@@ -158,6 +169,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
         }
     });
 
+    
+
     button_send = document.createElement("button");
     button_send.classList.add("button", "button_send");
     button_send.setAttribute("id", 'send');
@@ -166,23 +179,29 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     button_send.addEventListener("click", (event)=>{
         const question_input = document.querySelectorAll(".form__wrapper-answers input");
+        
         if (form_name.validity.valid && form_email.validity.valid && form_phone.validity.valid && form_text.validity.valid){
     
             question_input.forEach(i => {
+             
                 if (i.checked){
+                    counter ++;
+                    console.log("answer= " + answer);
+                    console.log("i.value= " + i.value);
                     if (i.value == answer){
-
                         showThanksModal();
                         event.preventDefault();
                         form.reset();
                     }
                     else {
-                        alert("wygląda na to, że jesteś botem :)");
+                        alert('Wygląda na to, że jesteś botem :) \n Spróbuj jeszcze raz :)');
+                        event.preventDefault();
+                        randomizeQuest();
+                        console.log("Błedna odpowiedz " + answer);
                     }
                 }
             });
         }            
     });
-
 
 });

@@ -1,8 +1,36 @@
 .logo{
-    width: 250px;
-    height: auto;
+    font-family: 'Perlata';
+    font-weight: 700;
+    color: black;
+    font-size: 65px;
+    color: #071678;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 #fff, 0 -2px #fff;
+    &_gold{
+        color: #FFA501;
+    }
+    &__link{
+        text-decoration: none;
+    }
 }
 
 .logo_animate{
     animation: fadeInDown 1s backwards;
+}
+
+@media (max-width: 1024px){
+    .logo{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px){
+    .logo{
+        font-size: 34px;
+        }
+}
+
+@media (max-width: 425px){
+    .logo{
+        font-size: 28px;
+        }
 }

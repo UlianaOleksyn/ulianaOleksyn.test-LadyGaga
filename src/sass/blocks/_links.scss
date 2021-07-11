@@ -21,3 +21,17 @@
         text-shadow: -1px 0 black, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     }
 }
+
+
+@media (max-width: 768px){
+    .link_contact{
+        a{
+            font-size: 24px;
+        }
+    }
+}
+@media (max-width: 555px){
+    .link_contact{
+        display: none;
+    }
+}

@@ -1,11 +1,10 @@
 header{
     background: url("../image/gold-background.jpg") center (center/cover) no-repeat;
-    height: 100px;
-    // border: 3px outset  #FFA501;
+    height: 85px;
 }
 footer{
     background: url("../image/background3.jpg");
-    padding: 0 50px;
+    height: 85px;
 }
 .footer, .header {
     &__wrapper{
@@ -43,3 +42,56 @@ footer{
 .icons_animate{
     animation: fadeInDown 1s;
 }
+
+@media (max-width: 1024px){
+    header, footer{
+        padding-top: 10px;
+        height: 70px;
+    }
+    .footer, .header {
+        &__icons{
+            width: 20%;
+            a{
+                margin: 0 7px;
+            }
+        }   
+    }
+}
+
+@media (max-width: 768px){
+    header, footer{
+        padding-top: 10px;
+        height: 50px;
+    }
+    .footer, .header {
+        &__icons{
+            width: 30%;
+            a{
+                margin: 0 7px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }   
+    }
+}
+
+@media (max-width: 425px){
+    header, footer{
+        height: 45px;
+    }
+    .footer, .header {
+        &__icons{
+            width: 25%;
+            a{ 
+                margin: 0 3px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }   
+    }
+}
+

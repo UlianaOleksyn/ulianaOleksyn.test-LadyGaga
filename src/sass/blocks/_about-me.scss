@@ -4,20 +4,23 @@
     &__descr{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         align-items: middle;
         gap: 30px;
         &_item{
             padding: 20px;
             font-size: 20px;
             line-height: 30px;
-            font-weight: 500;
             color: black;
             text-align: center;
             border: 3px outset  #FFA501;
             border-radius: 10px;
             background: url("../image/gold-background.jpg");
             opacity: 0.9;
+            p{
+                font-family: 'Perlata';
+                margin-top: 35px;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
             &_animate{
                 animation: rollIn 1s;
             }
@@ -36,6 +39,58 @@
                 height: 100px;
                 width: auto;
 
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .about-me{
+        padding: 40px 0;
+        &__descr{
+            &_item{
+                p{
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 555px){
+    .about-me{
+        &__descr{
+            grid-template-columns: 100%;
+
+            &_item{
+                width: 80%;
+                display: block; 
+                margin: 15px auto 0 auto;
+                p{
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 555px){
+    .about-me{
+        &__descr{
+            &_item{
+                margin-top: 0;
+                p{
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+            &_icon{
+                img{
+                    height: 77px;
+                }
             }
         }
     }
