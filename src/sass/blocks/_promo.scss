@@ -115,75 +115,82 @@
 
 @media screen and  (max-width: 570px){
     .promo{
-        height: 375px;
+        padding: 0;
+        height: 600px;
         &__foto{
-            left: -25%;
+            left: -18%;
+            img{
+                height: 600px;
+            }
         }
         &__descr{
-            left: 40%;
-            width: 56%;
-            font-size: 20px;
+            top: 45%;
+            left: 0;
+            width: 95%;
+            font-size: 26px;
+            line-height: 1.2;
+            text-align: center;
+            padding-left: 8px;
             span{
-                font-size: 18px;
+                font-size: 30px;
                 padding-bottom: 10px;
+                text-shadow: -2px 0 #FFA501, 0 2px #FFA501, 2px 0 white, 0 -2px white;
             }
             &_name{
-                font-size: 40px;
+                font-size: 55px;
                 margin: 5px 0 10px 0;
             }
         }
-        &__link {
-            position: absolute;
-            margin-top: 25px;
+        &__links{
+            height: 88px;
+            width: 100%;
+        }
+        &__link{
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
         }
     }
 }
 @media screen and  (max-width:425px){
     .promo{
-        height: 258px;
+        height: 550px;
         &__foto{
-            left: -20%;
+            left: -30%;
         }
         &__descr{
+            font-size: 24px;
             line-height: 1.2;
-            left: 36%;
-            top: 10px;
-            width: 63%;
-            font-size: 20px;
             span{
-                font-size: 20px;
-                padding-bottom: 20px;
+                padding-bottom: 15px;
             }
             &_name{
-                font-size: 36px;
-                margin: 5px 0 14px 0;
+                font-size: 40px;
             }
         }
         &__links{
-            height: 77px;
         }
         &__link{
-            margin-top: 12px;
+  
         }
     }
 }
 @media screen and  (max-width: 382px){
     .promo{
         &__foto{
-            left: -30%;
+            left: -46%;
         }
         &__descr{
-            display: block;
-            height: 280px;
-            line-height: 1.1;
-
+            font-size: 20px;
+            span{
+                padding-bottom: 25px;
+            }
             &_name{
-                font-size: 30px;
-                margin: 0;
+                margin: 10px 0 15px 0;
             }
         }
         &__link{
-            margin-top: 5px;
+            font-size: 20px;
         }
     }
 }

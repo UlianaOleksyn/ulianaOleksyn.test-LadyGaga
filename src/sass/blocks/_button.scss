@@ -25,8 +25,10 @@
     }
     &_send{
         width: 50%;
-        background-color: #071678;
-   
+        color: black;
+        background-image: linear-gradient(to right, pink, #FFA501);
+        font-weight: 700;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
 }
 
@@ -39,7 +41,7 @@
 @media screen and  (max-width: 570px){
     .button{
         font-size: 19px;
-        width: 47%;
+        width: 50%;
         height: 50px;
     }
     .button_send{
@@ -50,12 +52,20 @@
     }
 }
 
-@media  (max-width: 425px){
+@media screen and (max-width: 425px){
     .button{
-        font-size: 18px;
-        width: 40%;
+        font-size: 22px;
+        width: 70%;
         height: 40px;
         left: 0;
+
+    }
+}
+
+@media screen and (max-width: 382px){
+    .button{
+        font-size: 20px;
+        width: 74%;
 
     }
 }

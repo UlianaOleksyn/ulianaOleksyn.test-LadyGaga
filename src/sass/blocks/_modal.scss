@@ -21,7 +21,7 @@
         right: -100%;
         height: 100%;
         width: 50%;
-        background: url("../image/background-gold.jpg");
+        background: url("../image/background_modal.jpg") center (center/cover) no-repeat;
         transition: all 0.5s;
         overflow-y: scroll;
         &_show{
@@ -34,7 +34,7 @@
         position: absolute;
         top: -10px;
         right: 10px;
-        color: #071678;
+        color: #FFA501;
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
         cursor: pointer;
         &_mini{
@@ -45,8 +45,8 @@
     &__subtitle{
         font-size: 24px;
         line-height: 1.4;
-        color: #071678;
-        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        color: #FFA501;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         text-align: center;
     }
     &__form{
@@ -61,7 +61,7 @@
             font-weight: 300;
             box-shadow: inset 2px 2px 5px #071678;
             background: #E8F0FE;
-            color: white;
+            // color: bla;
             &:invalid {
                 &:required {
                     background-image: linear-gradient(to right, pink, #FFA501);
@@ -97,7 +97,7 @@
             left: 50%;
             top: 40%;
             transform: translate(-50%, -50%);
-            background-image: url("../image/background-gold.jpg");
+            background:  url("../image/background_modal.jpg") center (center/cover) no-repeat;
             border: 3px outset  #071678;
             border-radius: 20px;
             width: 45%;
